@@ -18,7 +18,7 @@ Some examples of acceptable one-line CMD scripts:
 Put the useful behavior in a CSharp file and make an entry point CMD script that does:
 
 ```batch
-@call dotnet run {path/tool/tool.cs} --verbosity quiet --nologo
+@call dotnet run {path/tool/tool.cs} --verbosity quiet --nologo -- %*
 ```
 
 (Requires dotnet 10).
@@ -38,7 +38,7 @@ Requires Mise.
 If you're in a Git repo, you have Bash available. Bash is not a good language but it is far better than Batch. Use some other language if one is readily available, but Bash is acceptable for smallish scripts (say under 100 lines).
 
 ```batch
-@call "C:\Program Files\Git\bin\bash.exe" %~dpn0 %*
+@call "C:\Program Files\Git\bin\bash.exe" "%~dpn0" %*
 ```
 
 paired with a corresponding Bash script in the same location. Note that the bash script should not have an extension, so that `./foo` will work on both PowerShell and Mac/Linux.

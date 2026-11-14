@@ -5,12 +5,12 @@ description: Use this skill whenever the user writes a message starting with "sk
 
 # Skill Stub Request
 
-When the user says `skill: <topic>`, they mean: scaffold an empty, minimal skill under their AgentSkills collection (`C:\Code\AgentSkills\skills\<kebab-case-name>\`) so they can fill in the real content themselves later. Do not run the full skill-creator interview/draft/eval loop unless they explicitly ask for that.
+When the user says `skill: <topic>`, they mean: scaffold an empty, minimal skill under their AgentSkills collection (`.claude/skills/<kebab-case-name>/`) so they can fill in the real content themselves later. Do not run the full skill-creator interview/draft/eval loop unless they explicitly ask for that.
 
 ## What to do
 
 1. Pick a kebab-case name from the topic (e.g. "CMD scripts" → `cmd-scripts`).
-2. Create `C:\Code\AgentSkills\skills\<name>\SKILL.md` with just a frontmatter stub and a TODO — no real instructions yet:
+2. Create `.claude/skills/<name>/SKILL.md` with just a frontmatter stub and a TODO — no real instructions yet:
 
 ```markdown
 ---

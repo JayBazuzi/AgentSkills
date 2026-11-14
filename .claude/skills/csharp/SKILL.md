@@ -45,6 +45,13 @@ These are not caught by analyzers:
 - Use `record` types for data, and make things immutable unless they need to change.
 - Model nullability honestly: if a value can be missing, make its type nullable rather than hiding it with `!`.
 - Don't mark things `sealed`.
+  This conflicts with analyzer CA1852, so turn it off in `.editorconfig`:
+
+  ```ini
+  [*.cs]
+  # We don't seal types; see the csharp skill.
+  dotnet_diagnostic.CA1852.severity = none
+  ```
 
 ## Related
 

@@ -36,12 +36,13 @@ CI runs the same build-and-test script that developers run locally (see the deve
 - Release
 - Check markdown links:
     ```yaml
-        - uses: tcort/github-action-markdown-link-check@v1
+    - uses: tcort/github-action-markdown-link-check@v1
       with:
         use-quiet-mode: 'yes'
+        config-file: 'mlc_config.json'
     ```
-    with configuration:
-    ```yaml
+    with configuration in `mlc_config.json` at the repo root:
+    ```json
     {
       "ignorePatterns": [
         {
