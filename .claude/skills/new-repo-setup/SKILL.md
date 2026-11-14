@@ -5,7 +5,7 @@ description: Use this skill whenever initializing a brand-new git repository, or
 
 # New Repo Setup
 
-Not every repo is buildable/CI-able — that's a separate concern (a separate skill), so this one stays scoped to git-level hygiene only.
+Not every repo is buildable/CI-able — that's a separate concern (see the developer-experience and continuous-integration skills), so this one stays scoped to git-level hygiene only.
 
 ## 1. `.gitignore`
 
@@ -16,7 +16,7 @@ Follow the `gitignore` skill.
 **Always ask the user which license they want before adding one** 
 
 - don't default a license silently. 
-- when they answer, copy the verbatim license texxt from a reliable source
+- when they answer, copy the verbatim license text from a reliable source
 
 
 ## 3. `.gitattributes`
