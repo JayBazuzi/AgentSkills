@@ -36,7 +36,7 @@ CI runs the same build-and-test script that developers run locally (see the deve
 - Release
 - Check markdown links:
     ```yaml
-    - uses: tcort/github-action-markdown-link-check@v1
+    - uses: tcort/github-action-markdown-link-check@e7c7a18363c842693fadde5d41a3bd3573a7a225 # v1.1.2
       with:
         use-quiet-mode: 'yes'
         config-file: 'mlc_config.json'

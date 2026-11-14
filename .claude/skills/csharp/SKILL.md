@@ -1,6 +1,6 @@
 ---
 name: csharp
-description: Use whenever writing, editing, or reviewing C# code (.cs files), including choosing language features, code style, nullability, or async patterns.
+description: Use whenever writing, editing, or reviewing C# code (.cs files), including choosing language features and coding patterns.
 ---
 
 # C#
@@ -38,7 +38,7 @@ Every C# project enables these, usually once in `Directory.Build.props`:
 - When a rule fires, fix the code rather than suppressing the rule.
   If a suppression is truly needed, keep it as narrow as possible and add a comment saying why.
 
-## Languge features
+## Language features
 
 These are not caught by analyzers:
 
