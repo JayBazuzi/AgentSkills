@@ -1,7 +1,9 @@
 {
-  "ignorePatterns": [
+  "replacementPatterns": [
     {
-      "pattern": "^/"
+      "pattern": "^/",
+      "replacement": "{{BASEURL}}/"
     }
-  ]
+  ],
+  "retryOn429": true
 }
