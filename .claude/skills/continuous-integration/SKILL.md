@@ -44,10 +44,12 @@ CI runs the same build-and-test script that developers run locally (see the deve
     with configuration in `mlc_config.json` at the repo root:
     ```json
     {
-      "ignorePatterns": [
+      "replacementPatterns": [
         {
-          "pattern": "^/"
+          "pattern": "^/",
+          "replacement": "{{BASEURL}}/"
         }
-      ]
+      ],
+      "retryOn429": true
     }
     ```
